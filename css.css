@@ -1,0 +1,17 @@
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --beige: rgb(239, 229, 210);
+    
+  }
+  
+
+main{
+    display: grid;
+    background-color: var(--beige);
+}
