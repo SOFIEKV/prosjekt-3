@@ -7,11 +7,54 @@
   
   :root {
     --beige: rgb(239, 229, 210);
+    --dark-red:rgb(165, 9, 40);
     
   }
   
-
+header{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    background-color: rgb(165, 9, 40);
+    color: var(--beige);
+    height: 100px;
+    align-items:flex-end ;
+    justify-content: space-around;
+    padding-bottom: 30px;
+}
+.logo{
+    font-size: 20px;
+    justify-self: start;
+}
+.navBar{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 17px;
+}
+.navBar h4{
+    padding: 0 10px 0 10px;
+}
 main{
     display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
     background-color: var(--beige);
+}
+.info{
+    grid-column: 2/3;
+    text-align: center;
+}
+.text{
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    background-color: rgb(165, 9, 40);
+    color: var(--beige);
+    height: 100px;
+    align-items: flex-end;
+    padding-bottom: 30px;
 }
