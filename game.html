@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Swim Away from the Shark!</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    canvas {
+        display: block;
+        background-color: #87CEEB; /* Light blue for water */
+    }
+</style>
+</head>
+<body>
+<canvas id="gameCanvas"></canvas>
+<script>
+    const canvas = document.getElementById('gameCanvas');
+    const ctx = canvas.getContext('2d');
+    
+    // Set canvas size
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    
+    // Load images
+    const personImg = new Image();
+    personImg.src = "bilder/person.png"; // Make sure you have a person image named 'person.png' in the same directory as this HTML file
+    const sharkImg = new Image();
+    sharkImg.src = "bilder/shark.png"; // Make sure you have a shark image named 'shark.png' in the same directory as this HTML file
+    
+    // Game objects
+    const person = {
+        x: canvas.width / 2,
+        y: canvas.height / 2,
+        width: 50,
+        height: 50,
+        speed: 5
+    };
+    
+    const shark = {
+        x: Math.random() * canvas.width,
+        y: Math.random() * canvas.height,
+        width: 100,
+        height: 50,
+        speed: 3
+    };
+    
+    // Handle player movement
+    function movePlayer(event) {
+        switch(event.key) {
+            case 'ArrowUp':
+                person.y -= person.speed;
+                break;
+            case 'ArrowDown':
+                person.y += person.speed;
+                break;
+            case 'ArrowLeft':
+                person.x -= person.speed;
+                break;
+            case 'ArrowRight':
+                person.x += person.speed;
+                break;
+        }
+    }
+    
+    // Check collision between person and shark
+    function checkCollision() {
+        if (person.x < shark.x + shark.width &&
+            person.x + person.width > shark.x &&
+            person.y < shark.y + shark.height &&
+            person.y + person.height > shark.y) {
+            return true;
+        }
+        return false;
+    }
+    
+    // Draw everything
+    function draw() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.drawImage(personImg, person.x, person.y, person.width, person.height);
+        ctx.drawImage(sharkImg, shark.x, shark.y, shark.width, shark.height);
+    }
+    
+    // Update game objects
+    function update() {
+        // Move shark towards the person
+        if (person.x < shark.x) {
+            shark.x -= shark.speed;
+        } else {
+            shark.x += shark.speed;
+        }
+        
+        if (person.y < shark.y) {
+            shark.y -= shark.speed;
+        } else {
+            shark.y += shark.speed;
+        }
+        
+        // Check for collision
+        if (checkCollision()) {
+            alert('You were caught by the shark! Game Over!');
+            document.removeEventListener('keydown', movePlayer);
+            location.reload();
+        }
+        
+        // Keep the person within the canvas bounds
+        if (person.x < 0) {
+            person.x = 0;
+        }
+        if (person.x > canvas.width - person.width) {
+            person.x = canvas.width - person.width;
+        }
+        if (person.y < 0) {
+            person.y = 0;
+        }
+        if (person.y > canvas.height - person.height) {
+            person.y = canvas.height - person.height;
+        }
+    }
+    
+    // Game loop
+    function gameLoop() {
+        draw();
+        update();
+        requestAnimationFrame(gameLoop);
+    }
+    
+    // Start the game loop
+    gameLoop();
+    
+    // Event listener for player movement
+    document.addEventListener('keydown', movePlayer);
+</script>
+</body>
+</html>
