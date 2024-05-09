@@ -6,7 +6,7 @@ canvas.height = window.innerHeight
 
 const spillerImg = new Image();
     spillerImg.src = "bilder/spiller.png"; 
-    const haiImg = new Image();
+const haiImg = new Image();
     haiImg.src = "bilder/hai.png"; 
 
 const spiller = {
