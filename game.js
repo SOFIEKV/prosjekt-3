@@ -14,7 +14,7 @@ const spiller = {
     y: canvas.height / 2,
     width:50,
     height:50,
-    fart: 5
+    fart: 10
 }
 
 const hai = {
@@ -22,7 +22,7 @@ const hai = {
     y: Math.random() * canvas.height,
     width: 50,
     height:50,
-    fart: 3
+    fart: 1
 }
 
 function move(event){
