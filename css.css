@@ -43,6 +43,9 @@ main{
     grid-column: 2/3;
     text-align: center;
 }
+h1{
+    font-size: 30px;
+}
 .text{
     font-size: 15px;
     line-height: 1.4;
