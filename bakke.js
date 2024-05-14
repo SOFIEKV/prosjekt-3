@@ -1,10 +1,10 @@
 import { incVerdi } from "./update.js"
 
-const bakke = document. querySelectorAll("[data-bakke]") 
+const bakke = document.querySelectorAll("[data-ground]") 
 const fart = .05 
 
 export function updateBakke(delta){
-    bakke.forEach(bakke => {
-incVerdi(bakke, "--left ", delta * fart* -1)
+    bakke.forEach(ground => {
+incVerdi(ground, "--left ", delta * fart* -1)
     } )
 }
