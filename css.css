@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Great+Vibes&family=Noto+Sans:wght@300;400;500;600;700;900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sofia&display=swap");
 
 * {
     padding: 0px;
@@ -8,15 +9,18 @@
   :root {
     --beige: rgb(239, 229, 210);
     --dark-red:rgb(165, 9, 40);
+    --grey:rgb(238, 234, 228);
+
     
   }
   
 header{
+    position: fixed;
     display: flex;
     flex-direction: row;
     width: 100vw;
-    background-color: rgb(165, 9, 40);
-    color: var(--beige);
+    background-color: var(--grey);
+    color: black;
     height: 100px;
     align-items:flex-end ;
     justify-content: space-around;
@@ -28,16 +32,22 @@ header{
 }
 .navBar{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     font-size: 17px;
 }
-.navBar h4{
-    padding: 0 10px 0 10px;
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration: underline var(--dark-red);
+    
 }
 main{
+    padding-top: 100px;
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
-    background-color: var(--beige);
+    background-color: var(--grey);
 }
 .info{
     grid-column: 2/3;
@@ -45,11 +55,37 @@ main{
 }
 h1{
     font-size: 30px;
+    font-family: Roboto;
+    padding: 40px 0 30px 0;
 }
 .text{
-    font-size: 15px;
-    line-height: 1.4;
+    font-size: 18px;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+  font-family: Roboto;
 }
+.AktivPassiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+h2{
+    text-align: center;
+    font-size: 25px;
+    font-family: Roboto;
+    padding: 40px 0 30px 0;
+}
+.aktiv{
+    width: 50%;
+    left: auto;
+}
+.passiv{
+    width: 50%;
+    right: auto;
+}
+
+
 
 footer{
     display: flex;
