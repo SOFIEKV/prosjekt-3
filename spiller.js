@@ -26,26 +26,30 @@ export function setupSpiller() {
   }
   
 
-  
   export function updateSpiller(delta, speedScale) {
     lop(delta, speedScale)
     hopp(delta)
   }
 
-  function lop(delta, speedScale) {
+
+export function startSpiller() {
+    spillerElem.src = "bilder/spillerHopp.png"
+  }
+
+  
+function lop(delta, speedScale) {
     if (hopper) {
-      spillerElem.src = `bilder/spiller.png`
+      spillerElem.src = `bilder/spillerHopp.png`
       return
     }
   
     if (currentFrameTime >= FRAME_TIME) {
       dinoFrame = (dinoFrame + 1) % DINO_FRAME_COUNT
-      spillerElem.src = `imgs/dino-run-${dinoFrame}.png`
+      spillerElem.src = `bilder/spiller${dinoFrame}.png`
       currentFrameTime -= FRAME_TIME
     }
     currentFrameTime += delta * speedScale
   }
-  
 
   function hopp(delta) {
     if (!hopper) return
