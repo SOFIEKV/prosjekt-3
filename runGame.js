@@ -1,4 +1,5 @@
 import{ setupGround, updateGround }from './bakke.js'
+import { updateSpiller, setupSpiller, } from "./spiller.js"
 
 const boksBredde = 100
 const boksHoyde = 30
@@ -26,6 +27,7 @@ function update(time){
     const delta= time - sisteTid
 
     updateGround(delta, speedScale)
+    updateSpiller(delta, speedScale)
     updateSpeed(delta)
     updateScore(delta)
 
@@ -46,6 +48,7 @@ function start(){
     speedScale = 1
     score= 0
     setupGround()
+    setupSpiller()
     startElem.classList.add("hide")
     window.requestAnimationFrame(update)
 }
