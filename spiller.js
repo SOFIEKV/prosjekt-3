@@ -1,0 +1,110 @@
+import { incVerdi, faVerdi,settVerdi } from "./update.js"
+
+
+const hoppfart = 0.45
+const tyngde = 0.0015
+const spillerElem = document.querySelector("[data-spiller]")
+const DINO_FRAME_COUNT = 2
+const FRAME_TIME = 100
+
+ 
+let hopper
+let dinoFrame
+let currentFrameTime
+let yVelocity
+
+
+ 
+export function setupSpiller() {
+    hopper = false
+    dinoFrame = 0
+    currentFrameTime = 0
+    yVelocity = 0
+    settVerdi(spillerElem, "--bottom", 0)
+    document.removeEventListener("keydown", onHopp)
+    document.addEventListener("keydown", onHopp)
+  }
+  
+
+  
+  export function updateSpiller(delta, speedScale) {
+    lop(delta, speedScale)
+    hopp(delta)
+  }
+
+  function lop(delta, speedScale) {
+    if (hopper) {
+      spillerElem.src = `bilder/spiller.png`
+      return
+    }
+  
+    if (currentFrameTime >= FRAME_TIME) {
+      dinoFrame = (dinoFrame + 1) % DINO_FRAME_COUNT
+      spillerElem.src = `imgs/dino-run-${dinoFrame}.png`
+      currentFrameTime -= FRAME_TIME
+    }
+    currentFrameTime += delta * speedScale
+  }
+  
+
+  function hopp(delta) {
+    if (!hopper) return
+  
+    incVerdi(spillerElem, "--bottom", yVelocity * delta)
+  
+    if (faVerdi(spillerElem, "--bottom") <= 0) {
+      settVerdi(spillerElem, "--bottom", 0)
+      hopper = false
+    }
+  
+    yVelocity -= tyngde * delta
+  }
+  
+
+  function onHopp(e) {
+    if (e.code !== "Space" || hopper) return
+  
+    yVelocity = hoppfart
+    hopper = true
+  }
+/*
+let hopper 
+let yVelocity
+export function setupSpiller(){
+    hopper = false
+    yVelocity = 0
+    settVerdi(spillerElem,"--bottom", 0 )
+    document.removeEventListener("keydown", startHopp)
+    document.addEventListener("keydown", startHopp)
+}
+
+export function updateSpiller(delta, speedScale){
+    lop()
+    hopp()
+}
+function lop(){
+    if(hopper)
+
+}
+function hopp(delta){
+    if(hopper) return 
+
+    incVerdi(spillerElem, "--bottom", yVelocity*delta)
+    
+    if(faVerdi(spillerElem, "--bottom")<=0){
+        settVerdi(spillerElem, "--bottom", 0)
+        hopper = false
+    }
+    yVelocity-=tyngde*delta
+}
+
+function startHopp(e){
+    if(e.code !== "space" || hopper) return
+    yVelocity = hoppfart
+}
+*/
+  
+ 
+
+
+  
