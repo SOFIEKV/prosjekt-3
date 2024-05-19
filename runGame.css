@@ -14,7 +14,7 @@
   .boks{
     overflow: hidden;
     position: relative;
-  }
+ }
   .score{
     position: absolute;
     font-size: 3vmin;
@@ -51,8 +51,7 @@
 .hinder{
     position: absolute;
     left: calc(var(--left)* 1%);
-    height: 25%;
-
+    height: 21.5%;
     bottom: 0;
 }
 

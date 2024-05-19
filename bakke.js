@@ -1,4 +1,4 @@
-import { incVerdi, settVerdi, faVerdi } from "./update.js"
+import { incVerdi, settVerdi, faVerdi } from "../update.js"
 
 const ground = document.querySelectorAll("[data-ground]") 
 const fart = 0.03 

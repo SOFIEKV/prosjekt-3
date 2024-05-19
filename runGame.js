@@ -1,5 +1,5 @@
 import { setupGround, updateGround } from './bakke.js'
-import { updateSpiller, setupSpiller, spillerRect, spillertapt } from "./spiller.js"
+import { updateSpiller, setupSpiller, spillerRect, spillertapt } from "../spiller.js"
 import { updateHinder, setupHinder, hinderRect } from "./hinder.js"
 
 const boksBredde = 100

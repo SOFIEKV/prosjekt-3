@@ -1,18 +1,15 @@
 import { incVerdi, faVerdi,settVerdi } from "./update.js"
 
-
-const hoppfart = 0.45
-const tyngde = 0.0012
+const hoppfart = 0.41
+const tyngde = 0.0013    
 const spillerElem = document.querySelector("[data-spiller]")
 const DINO_FRAME_COUNT = 2
 const FRAME_TIME = 100
 
- 
 let hopper
 let dinoFrame
 let currentFrameTime
 let yVelocity
-
 
  
 export function setupSpiller() {
@@ -45,7 +42,7 @@ export function startSpiller() {
   
 function lop(delta, speedScale) {
     if (hopper) {
-      spillerElem.src = `bilder/spillerHopp.png`
+      spillerElem.src = `bilder/spiller.png`
       return
     }
   
