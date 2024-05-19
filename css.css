@@ -25,6 +25,7 @@ header{
     align-items:flex-end ;
     justify-content: space-around;
     padding-bottom: 30px;
+    z-index: 9;
 }
 .logo{
     font-size: 20px;
@@ -42,6 +43,27 @@ a{
 a:hover{
     text-decoration: underline var(--dark-red);
     
+}
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-image: url(bilder/digitaleSpor.jpeg);
+    background-size: cover;
+    height: 100vh; 
+}
+.divbox{
+    padding-top: 18%;
+    text-align: center;
+    height: 40%;
+    width: 60%;
+    border: 1px solid gray;
+}
+.divbox h3{
+    font-family: Roboto;
+    color: black;
+
 }
 main{
     padding-top: 100px;
@@ -85,13 +107,11 @@ h2{
     right: auto;
 }
 
-
-
 footer{
     display: flex;
     flex-direction: row;
     width: 100vw;
-    background-color: rgb(165, 9, 40);
+    background-color: blue;
     color: var(--beige);
     height: 100px;
     align-items: flex-end;
