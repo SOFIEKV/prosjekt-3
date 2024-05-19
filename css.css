@@ -114,9 +114,14 @@ footer{
     display: flex;
     flex-direction: row;
     width: 100vw;
+    height: 200px;
     background-color: blue;
     color: var(--beige);
-    height: 100px;
-    align-items: flex-end;
-    padding-bottom: 30px;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.kontaktOss ul{
+    list-style-type: none;
+
 }
