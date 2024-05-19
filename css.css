@@ -81,8 +81,8 @@ h1{
     padding: 40px 0 30px 0;
 }
 .text{
-    font-size: 18px;
-    line-height: 1.6;
+    font-size: 20px;
+    line-height: 2;
     letter-spacing: 0.5px;
   font-family: Roboto;
 }
@@ -105,6 +105,9 @@ h2{
 .passiv{
     width: 50%;
     right: auto;
+}
+.KF{
+    padding: 15px 0 25px 0;
 }
 
 footer{
