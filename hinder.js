@@ -12,6 +12,9 @@ export function setupHinder() {
   document.querySelectorAll("[data-hinder]").forEach(hinder => {
     hinder.remove()
   })
+  document.querySelectorAll("[data-hinder]").forEach(hinder => {
+    hinder.remove()
+  })
 }
 
   
@@ -30,6 +33,11 @@ export function updateHinder(delta, speedScale) {
     nesteHinderTime -= delta
   }
 
+  export function hinderRect(){
+    return [...document.querySelectorAll("[data-hinder]")].map(hinder => {
+        return hinder.getBoundingClientRect()
+    })
+  }
 
   function lagHinder() {
     const hinder = document.createElement("img")

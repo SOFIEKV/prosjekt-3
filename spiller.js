@@ -25,12 +25,18 @@ export function setupSpiller() {
     document.addEventListener("keydown", onHopp)
   }
   
+  export function spillertapt(){
+    spillerElem.src= "bilder/spiller.png"
+  }
 
   export function updateSpiller(delta, speedScale) {
     lop(delta, speedScale)
     hopp(delta)
   }
 
+  export function spillerRect(){
+    return spillerElem.getBoundingClientRect()
+    }
 
 export function startSpiller() {
     spillerElem.src = "bilder/spillerHopp.png"
