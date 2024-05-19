@@ -2,7 +2,7 @@ import { incVerdi, faVerdi,settVerdi } from "./update.js"
 
 
 const hoppfart = 0.45
-const tyngde = 0.0015
+const tyngde = 0.0012
 const spillerElem = document.querySelector("[data-spiller]")
 const DINO_FRAME_COUNT = 2
 const FRAME_TIME = 100
