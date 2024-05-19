@@ -18,12 +18,20 @@
   .score{
     position: absolute;
     font-size: 3vmin;
-    right: 1vmin;
+    right: 10vmin;
     top: 1vmin;
+    background-color: #2c36a5;
+    color: whitesmoke;
+    padding: 7px 12px ;
+    border-radius: 10px;
+   
 
   }
   .start{
-    background-color: rgb(248, 244, 244);
+    background-color: #2c36a5;
+    border-radius: 20px;
+    padding: 7px 12px ;
+    color: whitesmoke;
     position: absolute;
     font-size: 5vmin;
     top: 50%;

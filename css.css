@@ -7,11 +7,11 @@
   }
   
   :root {
-    --beige: rgb(239, 229, 210);
-    --dark-red:rgb(165, 9, 40);
-    --grey:rgb(238, 234, 228);
+    --dark-grey: rgb(229, 225, 221);
+    --grey:rgb(245, 241, 236);
     --blue: #2c36a5;
-    --light-blue: #59c5b8 
+    --light-blue: #59c5b8;
+    --black:rgb(44, 40, 34);
   }
   
 header{
@@ -30,10 +30,10 @@ header{
 }
 .paa{
     background-color: var(--grey);
-    color: black;
+    color: var(--black);
 }
-.paa a{
-    color: black;
+.paa .navBar a{
+    color: var(--black);
 }
 .logo{
     font-size: 20px;
@@ -46,7 +46,7 @@ header{
     justify-items: center;
     
 }
-  a {
+ .navBar a{
     text-decoration: none;
     position: relative;
     color: transparent;
@@ -76,7 +76,6 @@ header{
     align-items: center;
     background-repeat: no-repeat;
     background-image: url(bilder/digitaleSpor.jpeg);
-    
     background-size: cover;
     height: 100vh; 
 }
@@ -94,8 +93,6 @@ header{
     font-family: Roboto;
     color: var(--blue);
     font-size: 50px;
-
-
 }
 main{
     padding-top: 100px;
@@ -109,11 +106,13 @@ main{
     text-align: center;
 }
 h1{
+    color: var(--black);
     font-size: 30px;
     font-family: Roboto;
     padding: 40px 0 30px 0;
 }
 .text{
+    color: var(--black);
     font-size: 20px;
     line-height: 2;
     letter-spacing: 0.5px;
@@ -126,6 +125,7 @@ h1{
     flex-wrap: wrap;
 }
 h2{
+    color: var(--black);
     text-align: center;
     font-size: 25px;
     font-family: Roboto;
@@ -139,9 +139,14 @@ h2{
     width: 50%;
     right: auto;
 }
+.lesMer{
+    background-color: var(--dark-grey);
+    border: solid;
+}
 .KF{
     padding: 15px 0 25px 0;
 }
+
 
 footer{
     display: flex;
