@@ -1,5 +1,6 @@
 import{ setupGround, updateGround }from './bakke.js'
 import { updateSpiller, setupSpiller, } from "./spiller.js"
+import {updateHinder, setupHinder} from "./hinder.js"
 
 const boksBredde = 100
 const boksHoyde = 30
@@ -11,9 +12,6 @@ const startElem = document.querySelector('[data-start]')
 scale()
 window.addEventListener("resize", scale)
 document.addEventListener("keydown", start, {once: true})
-
-
-
 
 let sisteTid 
 let speedScale 
@@ -28,6 +26,7 @@ function update(time){
 
     updateGround(delta, speedScale)
     updateSpiller(delta, speedScale)
+    updateHinder(delta, speedScale )
     updateSpeed(delta)
     updateScore(delta)
 
@@ -49,6 +48,7 @@ function start(){
     score= 0
     setupGround()
     setupSpiller()
+    setupHinder()
     startElem.classList.add("hide")
     window.requestAnimationFrame(update)
 }
