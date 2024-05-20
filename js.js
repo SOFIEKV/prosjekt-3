@@ -22,3 +22,10 @@ kildeKnapp.addEventListener("click", function () {
     }
 })
 
+const dropdown = document.querySelector("dropdownKnapp")
+const dropdownContent = document.getElementsByClassName("navBarContent")
+
+dropdown.addEventListener("onclick", function(){
+    dropdownContent.toggle("dropdownNavBarConten")
+
+})

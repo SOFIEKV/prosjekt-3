@@ -30,6 +30,25 @@ header {
     z-index: 9;
     transition: background-color 0.5s ease;
 }
+.dropdownKnapp{
+    display: none;
+    color: #2c36a5;
+}
+.dropdownNavBarContent{
+    display: none;
+  position: absolute;
+  right: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdownNavBarContent a{
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
 
 .paa {
     background-color: var(--grey);
@@ -45,7 +64,7 @@ header {
     justify-self: start;
 }
 
-.navBar {
+.navBarContent {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     font-size: 17px;
@@ -184,6 +203,7 @@ h2 {
     background-image: url("bilder/komersiellBoks.jpg");
     background-size: cover; 
     background-position: center; 
+    border-radius: 50px;
     
 }
     
@@ -195,7 +215,7 @@ h2 {
     font-size: 25px;
     color: var(--medium-blue);
     border-radius: 15px;
-    padding: 10px 5px;
+    padding: 10px 10px;
     background-color: rgb(255, 255, 255, 0.4);
     width: fit-content;
     height: fit-content;
@@ -205,8 +225,15 @@ h2 {
     margin-left: 60%;
     margin-top: 4%;
 }
-#link h3 {
-    margin: 30px 0;
+
+#link div {
+    margin: 40px 0;
+}
+#link a{
+text-decoration: none;
+}
+#link a:hover{
+    color: #2d6b6e;
 }
 
 
@@ -219,26 +246,40 @@ footer {
     display: flex;
     flex-direction: row;
     width: 100vw;
-    height: 200px;
+    height: fit-content;
+    min-height: 200px;
     background-color: var(--blue);
-    color: var(--beige);
+    color: var(--grey);
     align-items: center;
     justify-content: space-around;
-
 }
 
-.kontaktOss ul {
+.kontaktOss ul{
     list-style-type: none;
-    line-height: 2;
+    line-height: 1.8;
 }
 
 #kildeKnapp {
     background-color: var(--grey);
     border-radius: 10px;
-    padding: 3px 5px 3px 5px;
+    padding: 3px 5px;
     color: var(--blue);
+    border: none;
 }
 
 .kilder {
     display: none;
+    color: var(--grey);
+    line-height: 1.4;
+    margin-top: 8px;
+}
+
+@media(max-width:780px) {
+    .navBarContent{
+        display: none;
+    }
+    .dropdownKnapp{
+        display: block;
+    }
+
 }
