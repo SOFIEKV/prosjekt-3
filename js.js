@@ -22,10 +22,21 @@ kildeKnapp.addEventListener("click", function () {
     }
 })
 
-const dropdown = document.querySelector("dropdownKnapp")
-const dropdownContent = document.getElementsByClassName("navBarContent")
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+const navLink = document.querySelectorAll(".nav-link");
 
-dropdown.addEventListener("onclick", function(){
-    dropdownContent.toggle("dropdownNavBarConten")
+hamburger.addEventListener("click", mobileMenu);
+navLink.forEach(n => n.addEventListener("click", closeMenu));
 
-})
+function mobileMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+}
+
+function closeMenu() {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+}
+
+

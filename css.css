@@ -4,6 +4,7 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    font-family: Roboto;
 }
 
 :root {
@@ -16,7 +17,7 @@
 
 }
 
-header {
+.header {
     position: fixed;
     display: flex;
     flex-direction: row;
@@ -30,38 +31,72 @@ header {
     z-index: 9;
     transition: background-color 0.5s ease;
 }
-.dropdownKnapp{
+
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10%;
+}
+.nav-item {
+    margin-left: 5rem;
+}
+li{
+    list-style: none;
+}
+.nav-link{
+    color: transparent;
+    font-family: Roboto;
+    font-size: 1.2rem;
+    font-weight: 400;
+    list-style: none;
+}
+.hamburger {
     display: none;
-    color: #2c36a5;
 }
-.dropdownNavBarContent{
-    display: none;
-  position: absolute;
-  right: 0;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: transparent;
 }
-.dropdownNavBarContent a{
-color: black;
-padding: 12px 16px;
-text-decoration: none;
-display: block;
+.paa .bar{
+    background-color: #101010;
 }
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.nav-logo {
+    font-size: 2.1rem;
+    font-weight: 500;
+    color: #482ff7;
+}
+
+
 
 .paa {
     background-color: var(--grey);
+}
+
+.paa .nav-link {
     color: var(--black);
 }
 
-.paa .navBar a {
-    color: var(--black);
-}
 
-.logo {
+.paa .nav-logo {
     font-size: 20px;
     justify-self: start;
+    color: var(--black);
 }
 
 .navBarContent {
@@ -72,13 +107,13 @@ display: block;
 
 }
 
-.navBar a {
+.navbar a {
     text-decoration: none;
     position: relative;
     color: transparent;
 }
 
-a::after {
+.nav-link::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -91,7 +126,7 @@ a::after {
     transition: transform 0.25s ease-out;
 }
 
-a:hover::after {
+.nav-link:hover::after {
     transform: scaleX(1);
     transform-origin: bottom center;
 }
@@ -140,6 +175,10 @@ main {
     grid-template-columns: 1fr 4fr 1fr;
     background-color: var(--grey);
     padding-bottom: 100px;
+}
+.intro{
+    background-color: var(--blue);
+    color: var(--grey);
 }
 
 .info {
@@ -192,6 +231,12 @@ h2 {
 .passiv {
     width: 50%;
     right: auto;
+}
+.AP{
+    background-color: var(--blue);
+    color: var(--grey);
+    width: 45%;
+
 }
 
 .lesMer {
@@ -251,7 +296,8 @@ footer {
     background-color: var(--blue);
     color: var(--grey);
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 50%;
 }
 
 .kontaktOss ul{
@@ -274,12 +320,46 @@ footer {
     margin-top: 8px;
 }
 
-@media(max-width:780px) {
-    .navBarContent{
-        display: none;
-    }
-    .dropdownKnapp{
-        display: block;
+
+@media only screen and (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
     }
 
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        -webkit-transform: translateY(8px) rotate(45deg);
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        -webkit-transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-8px) rotate(-45deg);
+    }
 }
