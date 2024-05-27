@@ -157,6 +157,7 @@ li{
     color: var(--blue);
     font-size: 50px;
     margin: 5% 0;
+    text-align: center;
 }
 
 .spillKnapp {
