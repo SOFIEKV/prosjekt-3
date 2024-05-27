@@ -180,6 +180,11 @@ main {
 .intro{
     background-color: var(--blue);
     color: var(--grey);
+    border-radius: 20px;
+    padding-bottom: 7%;
+}
+.intro h1{
+    color: var(--grey);
 }
 
 .info {
@@ -235,9 +240,16 @@ h2 {
 }
 .AP{
     background-color: var(--blue);
-    color: var(--grey);
     width: 45%;
-
+    border-radius: 20px;
+    padding: 0 15px;
+}
+.AP .text{
+    color: var(--grey);
+}
+.AP h2{
+    color: var(--grey);
+    
 }
 
 .lesMer {
