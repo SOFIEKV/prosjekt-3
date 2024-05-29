@@ -305,17 +305,21 @@ footer {
     flex-direction: row;
     width: 100vw;
     height: fit-content;
-    min-height: 200px;
+    min-height: 250px;
     background-color: var(--blue);
     color: var(--grey);
-    align-items: center;
+   padding-top: 4%;
     justify-content: center;
     gap: 50%;
 }
 
+
 .kontaktOss ul{
     list-style-type: none;
     line-height: 1.8;
+}
+.kildeBox{
+    width: 200px;
 }
 
 #kildeKnapp {
@@ -324,10 +328,12 @@ footer {
     padding: 3px 5px;
     color: var(--blue);
     border: none;
+    cursor: pointer;
+    width: 35%;
+    text-align: center;
 }
 
 .kilder {
-    display: none;
     color: var(--grey);
     line-height: 1.4;
     margin-top: 8px;
