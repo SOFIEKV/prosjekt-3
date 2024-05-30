@@ -1,0 +1,382 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Great+Vibes&family=Noto+Sans:wght@300;400;500;600;700;900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sofia&display=swap");
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+.header{
+    position: fixed;
+    background-color: #333;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 8%;
+    color: white; 
+}
+.logo {
+    border-radius: 10px;
+    padding: 0.3% 0.4%;
+    margin-left: 5%;
+    font-size: 24px;
+    color: rgb(211, 71, 15);
+}
+.logo:hover{
+    rotate: 6deg;
+    transition: 0.3s;
+}
+.navBar{
+    list-style: none;
+    display: flex;
+}
+
+.side {
+    margin: 0 10px;
+}
+
+.side a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background 0.3s;
+}
+
+.side a:hover {
+    background-color: #575757;
+}
+
+.dropDown {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.dropDown div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+}
+
+@media (max-width: 770px) {
+    .navBar {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        background-color: #333;
+        top: 50px;
+        right: 20px;
+        width: 150px;
+    }
+    
+    .navBar.active {
+        display: flex;
+    }
+    
+    .dropDown {
+        display: flex;
+    }
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+}
+.hero{
+    grid-column: 1/4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    height: 100vh;background: linear-gradient(135deg, rgb(230, 153, 53), rgb(228, 71, 39));
+}
+.divbox{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+   background-color: #333;
+   opacity: 0.7;
+   width: 75%;
+   height: 70%;
+}
+.heroOverskrift{
+    color: white;
+    font-size: 3.5rem;
+}
+.heroUnderoverskrift{
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    padding: 2% 0;
+}
+.lesMer{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #575757;
+    padding: 2%;
+    margin: 3%;
+    border-radius: 10px;
+}
+.lesMer p{
+    font-size: 1.5rem;
+}
+.lesMer i{
+    font-size: 1.5rem;
+}
+.lesMer:hover{
+    i{
+        color: #333;
+        font-size: 2rem;
+        transition: 0.3s;
+    }  
+}
+.data{
+    grid-column: 2/3;
+    padding: 5% 0 10% 0;
+}
+.overskrift{
+    text-align: center;
+    font-size: 2.2rem;
+    margin: 3%;
+}
+.tekst{
+    text-align: center;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+}
+.PassivAktiv{
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1%;
+}
+.aktiv{
+    width: 50%;
+}
+.passiv{
+    width: 50%;
+}
+.APoverskrift{
+    text-align: center;
+    font-size: 1.8rem;
+}
+.algoritmer{
+    grid-column: 2/3;
+}
+
+.lesVidere{
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 3% 0 10% 0;
+}
+.lesVidereBox{
+    background: linear-gradient(135deg, rgb(230, 153, 53), rgb(228, 71, 39));
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    justify-content: space-around;
+    border-radius: 40px;
+    align-items: center;
+    height: 300px;
+}
+.lesVidereLink{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6%;
+    width: 30%;
+    min-width: fit-content;
+    background-color: white;
+    opacity: 0.6;
+    text-align: center;
+    height: 70%;
+    border-radius: 30px;
+}
+.lesVidereLink i{
+    font-size: 2rem;
+}
+.lesVidereLink:hover{
+    opacity: 0.8;
+    transition: 0.3s;
+}
+footer {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: fit-content;
+    min-height: 250px;
+    background-color: #333;
+    color: white;
+    padding-top: 4%;
+    justify-content: center;
+    gap: 25%;
+   
+}
+
+.kontaktOss ul {
+    list-style-type: none;
+    line-height: 1.8;
+}
+.kontaktOss h5{
+    font-size: 1.2rem;
+    margin-bottom: 2%;
+}
+.kontaktOss h6{
+    padding-top: 4%;
+    font-size: 1.2rem;
+}
+.kontaktOss i{
+    margin-right:2% ;
+}
+.kildeBox {
+    width: 200px;
+}
+.sosialeMedier h5{
+    font-size: 1.2rem;
+}
+.sosialeMedier ul {
+    list-style-type: none;
+    line-height: 2;
+}
+.sosialeMedier i{
+    padding-right: 4%;
+}
+#kildeKnapp {
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 3px 5px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 35%;
+    text-align: center;
+    border: orange solid 1.5px;
+}
+#kildeKnapp:hover{
+    background-color: orange;
+    transition: background 0.3s;
+}
+
+.kilder {
+    color: var(--grey);
+    line-height: 1.4;
+    margin-top: 8px;
+}
+/*
+.header {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 100px;
+    background-color: pink;
+    padding-left: 10%;
+}
+
+.navBar {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.navBar a {
+    text-decoration: transparent;
+    color: black;
+    font-size: 1rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+}
+
+.dropDown {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: transparent;
+}
+
+.link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--blue);
+    transform-origin: bottom center;
+    transition: transform 0.25s ease-out;
+}
+
+.link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom center;
+}
+@media only screen and (max-width: 768px) {
+    .navBar {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .navBar.active {
+        left: 0;
+    }
+
+    .navBar {
+        margin: 2.5rem 0;
+    }
+
+    .dropDown {
+        display: block;
+        cursor: pointer;
+    }
+
+    .dropDown.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .dropDown.active .bar:nth-child(1) {
+        -webkit-transform: translateY(8px) rotate(45deg);
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .dropDown.active .bar:nth-child(3) {
+        -webkit-transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+*/

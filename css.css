@@ -3,7 +3,7 @@
 * {
     padding: 0px;
     margin: 0px;
-    box-sizing: border-box;
+    t box-sizing: border-box;
     font-family: Roboto;
 }
 
@@ -13,9 +13,42 @@
     --blue: #2c36a5;
     --light-blue: #59c5b8;
     --black: rgb(44, 40, 34);
-    --medium-blue:#3b898d;
+    --medium-blue: #3b898d;
 
 }
+
+.header2 {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    background-color: var(--blue);
+    color: var(--grey);
+    height: 100px;
+    align-items: flex-end;
+    justify-content: space-around;
+    padding-bottom: 30px;
+    z-index: 9;
+}
+
+
+.nav-menu2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20%;
+}
+
+
+.nav-link2 {
+    font-family: Roboto;
+    font-size: 1.2rem;
+    font-weight: 400;
+    list-style: none;
+    color: var(--grey);
+    text-decoration: none;
+}
+
 
 .header {
     position: fixed;
@@ -37,21 +70,25 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    gap: 10%;
+    gap: 20%;
 }
+
 .nav-item {
     margin-left: 5rem;
 }
-li{
+
+li {
     list-style: none;
 }
-.nav-link{
+
+.nav-link {
     color: transparent;
     font-family: Roboto;
     font-size: 1.2rem;
     font-weight: 400;
     list-style: none;
 }
+
 .hamburger {
     display: none;
 }
@@ -65,7 +102,8 @@ li{
     transition: all 0.3s ease-in-out;
     background-color: transparent;
 }
-.paa .bar{
+
+.paa .bar {
     background-color: #101010;
 }
 
@@ -75,14 +113,11 @@ li{
     align-items: center;
 }
 
-
 .nav-logo {
     font-size: 2.1rem;
     font-weight: 500;
     color: #482ff7;
 }
-
-
 
 .paa {
     background-color: var(--grey);
@@ -91,7 +126,6 @@ li{
 .paa .nav-link {
     color: var(--black);
 }
-
 
 .paa .nav-logo {
     font-size: 20px;
@@ -177,13 +211,15 @@ main {
     background-color: var(--grey);
     padding-bottom: 100px;
 }
-.intro{
+
+.intro {
     background-color: var(--blue);
     color: var(--grey);
     border-radius: 20px;
     padding-bottom: 7%;
 }
-.intro h1{
+
+.intro h1 {
     color: var(--grey);
 }
 
@@ -238,18 +274,21 @@ h2 {
     width: 50%;
     right: auto;
 }
-.AP{
+
+.AP {
     background-color: var(--blue);
     width: 45%;
     border-radius: 20px;
     padding: 0 15px;
 }
-.AP .text{
+
+.AP .text {
     color: var(--grey);
 }
-.AP h2{
+
+.AP h2 {
     color: var(--grey);
-    
+
 }
 
 .lesMer {
@@ -257,18 +296,19 @@ h2 {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 600px; 
+    height: 600px;
     background-image: url("bilder/komersiellBoks.jpg");
-    background-size: cover; 
-    background-position: center; 
+    background-size: cover;
+    background-position: center;
     border-radius: 50px;
-    
+
 }
-    
-.lesMer h2{
+
+.lesMer h2 {
     z-index: 6;
 }
-.lesMer h3{
+
+.lesMer h3 {
     justify-self: right;
     font-size: 25px;
     color: var(--medium-blue);
@@ -277,9 +317,10 @@ h2 {
     background-color: rgb(255, 255, 255, 0.4);
     width: fit-content;
     height: fit-content;
-    
+
 }
-#link{
+
+#link {
     margin-left: 60%;
     margin-top: 4%;
 }
@@ -287,10 +328,12 @@ h2 {
 #link div {
     margin: 40px 0;
 }
-#link a{
-text-decoration: none;
+
+#link a {
+    text-decoration: none;
 }
-#link a:hover{
+
+#link a:hover {
     color: #2d6b6e;
 }
 
@@ -308,17 +351,18 @@ footer {
     min-height: 250px;
     background-color: var(--blue);
     color: var(--grey);
-   padding-top: 4%;
+    padding-top: 4%;
     justify-content: center;
     gap: 50%;
 }
 
 
-.kontaktOss ul{
+.kontaktOss ul {
     list-style-type: none;
     line-height: 1.8;
 }
-.kildeBox{
+
+.kildeBox {
     width: 200px;
 }
 
