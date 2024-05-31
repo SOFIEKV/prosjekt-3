@@ -8,6 +8,7 @@
 }
 
 .header{
+    z-index: 9;
     position: fixed;
     background-color: #333;
     color: white;
@@ -24,7 +25,7 @@
     padding: 0.3% 0.4%;
     margin-left: 5%;
     font-size: 24px;
-    color: rgb(211, 71, 15);
+    color: rgb(211, 15, 93);
 }
 .logo:hover{
     rotate: 6deg;
@@ -93,7 +94,7 @@ main{
     justify-content: center;
     align-items: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    height: 100vh;background: linear-gradient(135deg, rgb(230, 153, 53), rgb(228, 71, 39));
+    height: 100vh;background: linear-gradient(135deg, rgb(230, 153, 53),  rgb(211, 15, 93));
 }
 .divbox{
     display: flex;
@@ -207,7 +208,7 @@ main{
     margin: 10% 0 10% 0;
 }
 .lesVidereBox{
-    background: linear-gradient(135deg, rgb(230, 153, 53), rgb(228, 71, 39));
+    background: linear-gradient(135deg, rgb(230, 153, 53),  rgb(211, 15, 93));
     display: flex;
     flex-direction: row;
     width: 70%;
@@ -288,10 +289,10 @@ footer {
     cursor: pointer;
     width: 35%;
     text-align: center;
-    border: orange solid 1.5px;
+    border:  rgb(211, 15, 93) solid 1.5px;
 }
 #kildeKnapp:hover{
-    background-color: orange;
+    background-color:  rgb(211, 15, 93);
     transition: background 0.3s;
 }
 
@@ -301,45 +302,38 @@ footer {
     margin-top: 8px;
 }
 
-.main{
+
+.bakgrunn{
+    background: url(bilder/bakgrunn.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0.8;
+}
+.section{
+    height: 100vh;
+    width: 60%;
+    opacity: 0;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    background-color: #575757;
-    height: 2000px;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
 }
-.KFoverskrift{
-    grid-column: 3/4;
-}
-
-.KF1{
- 
-    display: none;
+.BK{
+    background-color:rgb(249, 228, 217);
+    padding: 8%;
+    border-radius: 30px;
+    color: rgb(233, 115, 5);
 }
 
-.KF2{
- 
-    display: none;
-    
-}
-
-.KF3{
-   
-    display: none;
-}
-
-.KF4{
-    margin: 5% 0;
-    display: none;
-}
-
-.KF5{
-    margin: 5% 0;
-    display: none;
-}
-.paa{
-    display: block;
-
+.section.paa {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /*
