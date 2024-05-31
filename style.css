@@ -335,7 +335,10 @@ footer {
     opacity: 1;
     transform: translateY(0);
 }
-
+.section i{
+    font-size: 5rem;
+    color: orange;
+}
 /*
 .header {
     position: fixed;
