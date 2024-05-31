@@ -16,3 +16,16 @@ function closeMeny() {
     dropDown.classList.remove("active");
     navBar.classList.remove("active");
 }
+
+
+
+let paa = "paa"
+let px = 700
+
+window.onscroll = function () {
+    if (window.scrollY >= px || window.pageYOffset >= px) {
+        document.getElementsByClassName("header")[0].classList.add(paa)
+    } else {
+        document.getElementsByClassName("header")[0].classList.remove(paa);
+    }
+}
