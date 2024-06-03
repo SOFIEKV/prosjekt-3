@@ -51,10 +51,28 @@
     transition: background 0.3s;
 }
 
-.side a:hover {
-    background-color: #575757;
+.side a {
+    display: block;
+    position: relative;
+    padding: 0.2em 0;
+  }
+  .side a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.1em;
+    background-color:  rgb(211, 15, 93);
+    opacity: 0;
+    transition: opacity 300ms, transform 300ms;
+  }
+  
+  .side a:hover::after,
+ .side a:focus::after {
+    opacity: 1;
+    transform: translate3d(0, 0.2em, 0);
 }
-
 .dropDown {
     display: none;
     cursor: pointer;
@@ -99,7 +117,8 @@ main{
     align-items: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     height: 100vh;
-    background: linear-gradient(135deg, rgb(230, 153, 53),  rgb(211, 15, 93));
+    background: linear-gradient(140deg,  rgb(231, 129, 158),rgb(77, 143, 201));
+   /* background: linear-gradient(135deg, rgb(230, 153, 53),  rgb(211, 15, 93));*/
 }
 .divbox{
     display: flex;
@@ -153,7 +172,12 @@ main{
 .overskrift{
     text-align: center;
     font-size: 2.2rem;
-    margin: 3% 0;
+    margin: 2% 0;
+}
+.strek{
+    width: 100%;
+    height: 2px;
+    background-color: rgb(211, 15, 93);
 }
 .tekst{
     text-align: center;
@@ -196,7 +220,7 @@ main{
 }
 
 #lespersonvern:hover{
-    color: rgb(250, 165, 7);
+    color: rgb(211, 15, 93);
     transition: 0.2s;
 
 }
@@ -330,7 +354,7 @@ footer {
     background-color:rgb(249, 228, 217);
     padding: 8%;
     border-radius: 30px;
-    color: rgb(233, 115, 5, 1);
+    color: rgb(77, 143, 201);
     font-size: 1.3rem;
 }
 
@@ -340,15 +364,29 @@ footer {
 }
 .section i{
     font-size: 5rem;
-    color: rgb(249, 163, 5, 1);
+    color: rgb(77, 143, 201);
     padding-bottom: 10%;
 }
-
+.mainPI{
+    padding-top: 8%;
+}
+.PIoverskrift{
+    grid-column: 3/4;
+    margin-top: 4%;
+}
+.PIintro{
+    grid-column: 3/4;
+    background-color: rgb(77, 143, 201);
+    border-radius: 25px;
+    margin-top: 4%;
+    padding: 1.5% 1%;
+}
 .PI{
-    padding-top: 10%;
+    padding: 3% 0;
     grid-column: 3/4;
     display: flex;
     justify-content: center;
+
 }
 .PI img{
     width: 80%;
