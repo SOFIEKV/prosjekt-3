@@ -1,6 +1,39 @@
 
 
 
+document.addEventListener("DOMContentLoaded", function() {
+    const dropDown = document.getElementById("dropDown");
+    const navBar = document.getElementById("navBar");
+
+    dropDown.addEventListener("click", function() {
+        navBar.classList.toggle("active");
+    });
+});
+
+
+
+
+
+const skrollned = document.querySelector(".lesMer");
+
+skrollned.addEventListener("click", function () {
+    window.scrollTo({
+        top: 750,
+        behavior: "smooth"
+    });
+});
+
+
+const skrollopp = document.querySelector(".skrolloppKnapp");
+
+skrollopp.addEventListener("click", function () {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});
+
+
 const kildeKnapp = document.getElementById("kildeKnapp")
 const kilder = document.querySelector(".kilder")
 
@@ -12,22 +45,5 @@ kildeKnapp.addEventListener("click", function () {
         kilder.style.display = "none";
     }
 })
-
-const hamburger = document.querySelector(".hamburger");
-const navMenu = document.querySelector(".nav-menu");
-const navLink = document.querySelectorAll(".nav-link");
-
-hamburger.addEventListener("click", mobileMenu);
-navLink.forEach(n => n.addEventListener("click", closeMenu));
-
-function mobileMenu() {
-    hamburger.classList.toggle("active");
-    navMenu.classList.toggle("active");
-}
-
-function closeMenu() {
-    hamburger.classList.remove("active");
-    navMenu.classList.remove("active");
-}
 
 

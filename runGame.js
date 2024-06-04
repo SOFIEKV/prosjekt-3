@@ -86,3 +86,25 @@ function scale() {
     boksElm.style.width = `${boksBredde * boksScale}px`
     boksElm.style.height = `${boksHoyde * boksScale}px`
 }
+
+
+const popup = document.querySelector(".intro")
+window.addEventListener("load", function () {
+  popup.classList.add("aktiv");
+});
+
+
+const lukk = document.getElementById("lukkKnapp")
+lukk.addEventListener("click", function () {
+  if (popup.classList.contains("aktiv")) {
+    window.location.href = "forside.html";
+  }
+});
+
+
+const startspill = document.getElementById("startSpill")
+startspill.addEventListener("click", function () {
+  if (popup.classList.contains("aktiv")) {
+    popup.classList.remove("aktiv");
+  }
+});
