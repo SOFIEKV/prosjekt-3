@@ -1,4 +1,4 @@
-import { faVerdi, incVerdi, settVerdi } from "../update.js"
+import { faVerdi, incVerdi, settVerdi } from "./update.js"
 
 const hinderFart = 0.03
 const hinderMinIntervall = 500
