@@ -129,8 +129,69 @@
 .paa{
     background-color: transparent;
 }
+/*footer*/
 
-
+footer {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: fit-content;
+    min-height: 250px;
+    background-color: var(--black);
+    color: var(--white);
+    padding-top: 4%;
+    justify-content: center;
+    gap: 25%;
+   
+}
+.kontaktOss ul {
+    list-style-type: none;
+    line-height: 1.8;
+}
+.kontaktOss h5{
+    font-size: 1.2rem;
+    margin-bottom: 2%;
+}
+.kontaktOss h6{
+    padding-top: 4%;
+    font-size: 1.2rem;
+}
+.kontaktOss i{
+    margin-right:2% ;
+}
+.kildeBox {
+    width: 200px;
+}
+.sosialeMedier h5{
+    font-size: 1.2rem;
+}
+.sosialeMedier ul {
+    list-style-type: none;
+    line-height: 2;
+}
+.sosialeMedier i{
+    padding-right: 4%;
+}
+#kildeKnapp {
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 3px 5px;
+    color: var(--white);
+    border: none;
+    cursor: pointer;
+    width: 35%;
+    text-align: center;
+    border:  var(--dark-pink) solid 1.5px;
+}
+#kildeKnapp:hover{
+    background-color:  var(--dark-pink);
+    transition: background 0.3s;
+}
+.kilder {
+    color: var(--grey);
+    line-height: 1.4;
+    margin-top: 8px;
+}
 /* generelt*/
 main{
     display: grid;
@@ -157,19 +218,31 @@ main{
 .skrollopp{
     grid-column: 3/4;
     display: flex;
- justify-content: flex-end;
  }
  .skrolloppKnapp{
      display: flex;
      justify-content: center;
      align-items: center;
+     gap: 1%;
      width: 100%;
-     height: 70px;
+     height: 60px;
      margin: 7%;
      border-radius: 50px;
      background-color: var(--dark-pink);
+     color: var(--white);
      cursor: pointer;
  }
+ .skrolloppKnapp p{
+      font-size: 1.2rem;
+ }
+ .skrollopp i{
+    font-size: 1rem;
+ }
+ .skrolloppKnapp:hover{
+    background-color: var(--pink);
+    transition: background 0.3s;
+}
+
 /*forside*/
 .hero{
     grid-column: 1/6;
@@ -286,6 +359,7 @@ main{
     display: flex;
     flex-direction: row;
     width: 70%;
+    height: 250px;
     justify-content: space-around;
     border-radius: 40px;
     align-items: center;
@@ -311,68 +385,6 @@ main{
 .lesVidereLink:hover{
     opacity: 0.8;
     transition: 0.3s;
-}
-footer {
-    display: flex;
-    flex-direction: row;
-    width: 100vw;
-    height: fit-content;
-    min-height: 250px;
-    background-color: #333;
-    color: var(--white);
-    padding-top: 4%;
-    justify-content: center;
-    gap: 25%;
-   
-}
-
-.kontaktOss ul {
-    list-style-type: none;
-    line-height: 1.8;
-}
-.kontaktOss h5{
-    font-size: 1.2rem;
-    margin-bottom: 2%;
-}
-.kontaktOss h6{
-    padding-top: 4%;
-    font-size: 1.2rem;
-}
-.kontaktOss i{
-    margin-right:2% ;
-}
-.kildeBox {
-    width: 200px;
-}
-.sosialeMedier h5{
-    font-size: 1.2rem;
-}
-.sosialeMedier ul {
-    list-style-type: none;
-    line-height: 2;
-}
-.sosialeMedier i{
-    padding-right: 4%;
-}
-#kildeKnapp {
-    background-color: transparent;
-    border-radius: 10px;
-    padding: 3px 5px;
-    color: var(--white);
-    border: none;
-    cursor: pointer;
-    width: 35%;
-    text-align: center;
-    border:  var(--dark-pink)(211, 15, 93) solid 1.5px;
-}
-#kildeKnapp:hover{
-    background-color:  var(--dark-pink)(211, 15, 93);
-    transition: background 0.3s;
-}
-.kilder {
-    color: var(--grey);
-    line-height: 1.4;
-    margin-top: 8px;
 }
 .bakgrunn{
     background: url(bilder/bakgrunn.jpg);
