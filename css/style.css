@@ -390,7 +390,7 @@ main{
 
 /* komersielle formål*/
 .bakgrunn{
-    background: url(bilder/bakgrunn.jpg);
+    background: url(/bilder/bakgrunn.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
