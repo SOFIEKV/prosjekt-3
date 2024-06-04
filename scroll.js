@@ -4,7 +4,7 @@ let px = 500;
 let maxPx = 600;
 
 window.onscroll = function () {
-    document.querySelectorAll(".KF2").forEach((section, index) => {
+    document.querySelectorAll(".KF").forEach((section, index) => {
         let sectionTop = section.offsetTop;
         let sectionBottom = sectionTop + section.offsetHeight;
 
@@ -18,3 +18,13 @@ window.onscroll = function () {
     });
 };
 
+const skroll = document.querySelectorAll(".pil");
+
+skroll.forEach(element => {
+    element.addEventListener("click", function () {
+        window.scrollBy({
+            top: 800,
+            behavior: "smooth"
+        });
+    });
+});

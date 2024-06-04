@@ -12,27 +12,16 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
+const skrollopp = document.querySelectorAll(".skrolloppKnapp");
 
-
-const skrollned = document.querySelector(".lesMer");
-
-skrollned.addEventListener("click", function () {
-    window.scrollTo({
-        top: 750,
-        behavior: "smooth"
+skrollopp.forEach(element => {
+    element.addEventListener("click", function () {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
     });
 });
-
-
-const skrollopp = document.querySelector(".skrolloppKnapp");
-
-skrollopp.addEventListener("click", function () {
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-    });
-});
-
 
 const kildeKnapp = document.getElementById("kildeKnapp")
 const kilder = document.querySelector(".kilder")

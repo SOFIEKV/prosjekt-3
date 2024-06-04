@@ -126,9 +126,6 @@
     }
 }
 
-.paa{
-    background-color: transparent;
-}
 /*footer*/
 
 footer {
@@ -244,6 +241,10 @@ main{
 }
 
 /*forside*/
+
+.borte{
+    background-color: transparent;
+}
 .hero{
     grid-column: 1/6;
     display: flex;
@@ -386,6 +387,8 @@ main{
     opacity: 0.8;
     transition: 0.3s;
 }
+
+/* komersielle formål*/
 .bakgrunn{
     background: url(bilder/bakgrunn.jpg);
     background-repeat: no-repeat;
@@ -401,29 +404,46 @@ main{
     width: 60%;
     opacity: 0;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     transform: translateY(20px);
     transition: opacity 1s ease-out, transform 1s ease-out;
 }
 .BK{
-    background-color:var(--dark-pink)(249, 228, 217);
-    padding: 8%;
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(246, 241, 236);
+    padding: 8% 8% 3% 8%;
     border-radius: 30px;
-    color: var(--dark-pink)(77, 143, 201);
+    color: rgb(0,0,0);
     font-size: 1.3rem;
 }
-
+.BKoverskrift{
+    padding: 8%;
+}
 .section.paa {
     opacity: 1;
     transform: translateY(0);
 }
-.section i{
-    font-size: 5rem;
-    color: var(--dark-pink)(77, 143, 201);
-    padding-bottom: 10%;
+.pil{
+    display: flex;
+    justify-content: flex-end;
 }
+.section i{
+    font-size: 2rem;
+    color: var(--pink);
+}
+
+.section i:hover{
+    color: var(--dark-pink);
+    transition: 0.3s;
+}
+.skrolloppKF{
+    width: 70%;
+}
+
+/*informasjonstillgang og politikk*/
 .mainPI{
     padding-top: 8%;
 }
