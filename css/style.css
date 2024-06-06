@@ -287,7 +287,6 @@ main{
 .lesMer p{
     font-size: 1.5rem;
 }
-
 .lesMer:hover{
     p{
         color: var(--dark-pink);
@@ -317,6 +316,15 @@ main{
     flex-direction: column;
     width: 45%;
 }
+.typeSpor a{
+    margin-top: 8%;
+    text-decoration: none;
+    color: var(--black);
+}
+.typeSpor a:hover{
+    color: var(--dark-pink);
+    transition: 0.25s;
+}
 .aktiv img{
     width: 90%;
     border-radius: 10px;
@@ -332,14 +340,6 @@ main{
 }
 #AP{
     font-size: 1.1rem;
-}
-#lespersonvern{
-    margin-top: 8%;
-}
-#lespersonvern:hover{
-    color: var(--dark-pink);
-    transition: 0.25s;
-
 }
 .algoritmer{
     grid-column: 3/4;

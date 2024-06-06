@@ -42,7 +42,7 @@ export function updateHinder(delta, speedScale) {
   function lagHinder() {
     const hinder = document.createElement("img")
     hinder.dataset.hinder = true
-    hinder.src = "bilder/hinder.png"
+    hinder.src = "../bilder/hinder.png"
     hinder.classList.add("hinder")
     settVerdi(hinder, "--left", 100)
     boksElem.append(hinder)

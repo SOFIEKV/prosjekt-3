@@ -36,19 +36,19 @@ export function setupSpiller() {
     }
 
 export function startSpiller() {
-    spillerElem.src = "bilder/spillerHopp.png"
+    spillerElem.src = "../bilder/spillerHopp.png"
   }
 
   
 function lop(delta, speedScale) {
     if (hopper) {
-      spillerElem.src = `bilder/spiller.png`
+      spillerElem.src = `../bilder/spiller.png`
       return
     }
   
     if (currentFrameTime >= FRAME_TIME) {
       dinoFrame = (dinoFrame + 1) % DINO_FRAME_COUNT
-      spillerElem.src = `bilder/spiller${dinoFrame}.png`
+      spillerElem.src = `../bilder/spiller${dinoFrame}.png`
       currentFrameTime -= FRAME_TIME
     }
     currentFrameTime += delta * speedScale
