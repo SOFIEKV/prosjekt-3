@@ -17,18 +17,23 @@ body {
 h1 {
     text-align: center;
 }
-.question{
-    font-size: 1.2rem;
 
+.question {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
 }
-.answers{
-    
+
+.answers {
+    margin-bottom: 20px;
 }
-#tekst{
-    font-size: 1rem;
+
+label {
+    display: block;
+    margin-bottom: 10px;mn 
 }
-#submit{
-    background-color: #333;
+
+#submit {
+    background-color: rgb(246, 65, 155);;
     color: #fff;
     padding: 10px;
     margin-top: 20px;
@@ -41,7 +46,7 @@ h1 {
 }
 
 button:hover {
-    background: #555;
+    background:hotpink;;
 }
 
 #results {
