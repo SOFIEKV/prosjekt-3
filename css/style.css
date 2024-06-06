@@ -470,4 +470,30 @@ main{
     border-radius: 30px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-  
+/*persjonvern*/
+.PVoverskrift{
+    grid-column: 3/4;
+    margin-top: 15%;
+}
+.PV{
+    padding: 3% 0;
+    grid-column: 3/4; 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.quiz{
+    background-color: var(--blue);
+    width: fit-content;
+    padding: 1%;
+    border-radius: 20px;
+    margin-top: 1%;
+}
+.quiz a{
+    color: var(--white);
+    text-decoration: none;
+}
+.quiz:hover{
+    background-color: var(--pink);
+    transition: 0.3s;
+}
