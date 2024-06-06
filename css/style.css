@@ -20,6 +20,7 @@
     z-index: 9;
     position: fixed;
     background-color: var(--black);
+    transition: background-color 0.5s;
     color: var(--white);
     display: flex;
     flex-direction: row;
@@ -169,6 +170,10 @@ footer {
 .sosialeMedier i{
     padding-right: 4%;
 }
+
+
+
+
 #kildeKnapp {
     background-color: transparent;
     border-radius: 10px;
@@ -189,6 +194,9 @@ footer {
     line-height: 1.4;
     margin-top: 8px;
 }
+
+
+
 /* generelt*/
 main{
     display: grid;
@@ -307,6 +315,7 @@ main{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 5%;
     margin-bottom: 5%;
 }
@@ -360,7 +369,7 @@ main{
     display: flex;
     flex-direction: row;
     width: 70%;
-    height: 250px;
+    min-height: 250px;
     justify-content: space-around;
     border-radius: 40px;
     align-items: center;
@@ -421,6 +430,7 @@ main{
 }
 .BKoverskrift{
     padding: 8%;
+    text-align: center;
 }
 .section.paa {
     opacity: 1;
