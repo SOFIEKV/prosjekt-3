@@ -59,14 +59,12 @@
 .side {
     margin: 0 10px;
 }
-
 .side a {
     color: var(--white);
     text-decoration: none;
     padding: 5px 10px;
     transition: background 0.3s;
 }
-
 .side a {
     display: block;
     position: relative;
