@@ -1,24 +1,23 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-}
+
 .quizSide{
     padding-top: 100px;
     display: flex;
     justify-content: center;
+    background: linear-gradient(135deg, var(--blue), var(--pink));
 }
 .quiz-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 50%;
-    background: #fff;
+    background: var(--white);
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    border-radius: 30px;
     margin-bottom: 4%;
 }
 #quiz{
-    padding-left: 40px;
+   text-align: left;
 }
 
 h1 {
@@ -26,18 +25,19 @@ h1 {
     background-color: pink;
     border-radius: 20px;
     font-size: 1.5rem;
-    padding: 1%;
-    margin-bottom: 2%;
+    padding: 2%;
+    margin: 4% 0 8% 0;
 }
 
 .question {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     margin-bottom: 10px;
     font-weight: 550;
 }
 
 .answers {
-    margin-bottom: 25px;
+    margin-bottom: 10%;
+    font-size: 1.1rem;
 }
 
 label {
@@ -46,25 +46,24 @@ label {
 }
 
 #skjekksvar {
-    background: rgb(246, 51, 149);
-    color: #fff;
+    background: var(--dark-pink);
+    color: var(--white);
     padding: 10px;
-    margin-top: 20px;
     border-radius: 10px;
     cursor: pointer;
     display: block;
-    width: 100%;
-    color: #fff;
+    width: 50%;
     border: none;
+    font-size: 1.2rem;
 }
 
 #skjekksvar:hover {
-    background:hotpink;
+    background:var(--pink);
     transition: 0.3s;
 }
 
 #resultat {
-    margin-top: 20px;
+    margin: 45px 0;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }

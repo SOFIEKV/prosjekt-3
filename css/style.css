@@ -8,15 +8,15 @@
 }
 
 :root {
-    --black :rgb(58, 55, 50);
+    --black: rgb(58, 55, 50);
     --white: rgb(250, 250, 250);
     --dark-pink: rgb(211, 15, 93);
     --pink: rgb(231, 129, 158);
     --blue: rgb(77, 143, 201);
-  }
+}
 
 /* header*/
-.header{
+.header {
     z-index: 9;
     position: fixed;
     background-color: var(--black);
@@ -28,30 +28,34 @@
     align-items: center;
     width: 100vw;
     height: 8%;
-    color: var(--white); 
+    color: var(--white);
     padding: 10px 20px;
 }
+
 .logo {
     border-radius: 10px;
     padding: 0.3% 0.4%;
     margin-left: 5%;
     font-size: 24px;
 }
-.logo a{
+
+.logo a {
     color: var(--dark-pink);
     text-decoration: none;
     font-size: 1.5rem;
 }
 
-.logo:hover{
+.logo:hover {
     rotate: 6deg;
     transition: 0.3s;
 }
-.navBar{
+
+.navBar {
     list-style: none;
     display: flex;
     gap: 20px;
 }
+
 .side {
     margin: 0 10px;
 }
@@ -67,24 +71,26 @@
     display: block;
     position: relative;
     padding: 0.2em 0;
-  }
-  .side a::after {
+}
+
+.side a::after {
     content: '';
     position: absolute;
     bottom: 0.2em;
     left: 0;
     width: 100%;
     height: 0.1em;
-    background-color:  var(--dark-pink);
+    background-color: var(--dark-pink);
     opacity: 0;
     transition: opacity 300ms, transform 300ms;
-  }
-  
-  .side a:hover::after,
- .side a:focus::after {
+}
+
+.side a:hover::after,
+.side a:focus::after {
     opacity: 1;
     transform: translate3d(0, 0.2em, 0);
 }
+
 .dropDown {
     display: none;
     cursor: pointer;
@@ -104,13 +110,13 @@
         display: none;
         flex-direction: column;
         width: fit-content;
-        background-color:var(--black);
+        background-color: var(--black);
         position: absolute;
         top: 50px;
         right: 0;
         padding: 0 10px 10px 0;
-        
-        
+
+
     }
 
     .navBar.active {
@@ -118,7 +124,7 @@
         flex-direction: column;
         width: fit-content;
         background-color: var(--black);
-     
+
 
     }
 
@@ -140,34 +146,42 @@ footer {
     padding-top: 4%;
     justify-content: center;
     gap: 25%;
-   
+
 }
+
 .kontaktOss ul {
     list-style-type: none;
     line-height: 1.8;
 }
-.kontaktOss h5{
+
+.kontaktOss h5 {
     font-size: 1.2rem;
     margin-bottom: 2%;
 }
-.kontaktOss h6{
+
+.kontaktOss h6 {
     padding-top: 4%;
     font-size: 1.2rem;
 }
-.kontaktOss i{
-    margin-right:2% ;
+
+.kontaktOss i {
+    margin-right: 2%;
 }
+
 .kildeBox {
     width: 200px;
 }
-.sosialeMedier h5{
+
+.sosialeMedier h5 {
     font-size: 1.2rem;
 }
+
 .sosialeMedier ul {
     list-style-type: none;
     line-height: 2;
 }
-.sosialeMedier i{
+
+.sosialeMedier i {
     padding-right: 4%;
 }
 
@@ -183,12 +197,14 @@ footer {
     cursor: pointer;
     width: 35%;
     text-align: center;
-    border:  var(--dark-pink) solid 1.5px;
+    border: var(--dark-pink) solid 1.5px;
 }
-#kildeKnapp:hover{
-    background-color:  var(--dark-pink);
+
+#kildeKnapp:hover {
+    background-color: var(--dark-pink);
     transition: background 0.3s;
 }
+
 .kilder {
     color: var(--grey);
     line-height: 1.4;
@@ -198,90 +214,101 @@ footer {
 
 
 /* generelt*/
-main{
+main {
     display: grid;
     grid-template-columns: 1fr 1fr 8fr 1fr 1fr;
 }
 
-.overskrift{
+.overskrift {
     text-align: center;
     font-size: 2.2rem;
     margin: 2% 0;
 }
-.strek{
+
+.strek {
     width: 100%;
     height: 2px;
     background-color: var(--dark-pink);
 }
-.tekst{
-    text-align: center;
+
+.tekst {
+    text-align: justify;
     font-size: 1.3rem;
     line-height: 1.5;
     letter-spacing: 0.5px;
 }
 
-.skrollopp{
+.skrollopp {
     grid-column: 3/4;
     display: flex;
- }
- .skrolloppKnapp{
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     gap: 1%;
-     width: 100%;
-     height: 60px;
-     margin: 7%;
-     border-radius: 50px;
-     background-color: var(--dark-pink);
-     color: var(--white);
-     cursor: pointer;
- }
- .skrolloppKnapp p{
-      font-size: 1.2rem;
- }
- .skrollopp i{
+}
+
+.skrolloppKnapp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1%;
+    width: 100%;
+    height: 60px;
+    margin: 7%;
+    border-radius: 50px;
+    background-color: var(--dark-pink);
+    color: var(--white);
+    cursor: pointer;
+}
+
+.skrolloppKnapp p {
+    font-size: 1.2rem;
+}
+
+.skrollopp i {
     font-size: 1rem;
- }
- .skrolloppKnapp:hover{
+}
+
+.skrolloppKnapp:hover {
     background-color: var(--pink);
     transition: background 0.3s;
 }
 
 /*forside*/
 
-.borte{
+.borte {
     background-color: transparent;
 }
-.hero{
+
+.hero {
     grid-column: 1/6;
     display: flex;
     justify-content: center;
     align-items: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     height: 100vh;
-    background: linear-gradient(140deg,  var(--pink),var(--blue));
+    background: linear-gradient(140deg, var(--pink), var(--blue));
 }
-.divbox{
+
+.divbox {
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
     background-color: rgba(40, 40, 40, 0.4);
-   width: 75%;
-   height: 70%;
+    width: 75%;
+    height: 70%;
 }
-.heroOverskrift{
+
+.heroOverskrift {
     color: var(--white);
     font-size: 3.5rem;
 }
-.heroUnderoverskrift{
+
+.heroUnderoverskrift {
     text-align: center;
     color: var(--white);
     font-size: 2rem;
     padding: 2% 0;
 }
-.lesMer{
+
+.lesMer {
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
@@ -292,25 +319,31 @@ main{
     margin: 2%;
     border-radius: 10px;
 }
-.lesMer p{
+
+.lesMer p {
     font-size: 1.5rem;
 }
-.lesMer:hover{
-    p{
+
+.lesMer:hover {
+    p {
         color: var(--dark-pink);
         transition: 0.3s;
-    }  
+    }
+
     background-color: var(--pink);
     transition: 0.3s;
 }
-.data{
+
+.data {
     grid-column: 3/4;
     padding: 8% 0 10% 0;
 }
-.forsidetekst{
+
+.forsidetekst {
     padding-top: 5%;
 }
-.PassivAktiv{
+
+.PassivAktiv {
     grid-column: 2/5;
     display: flex;
     flex-direction: row;
@@ -319,41 +352,50 @@ main{
     gap: 5%;
     margin-bottom: 5%;
 }
-.typeSpor{
+
+.typeSpor {
     display: flex;
     align-items: center;
     flex-direction: column;
     width: 45%;
 }
-.typeSpor a{
+
+.typeSpor a {
     margin-top: 8%;
     text-decoration: none;
     color: var(--black);
 }
-.typeSpor a:hover{
+
+.typeSpor a:hover {
     color: var(--dark-pink);
     transition: 0.25s;
 }
-.aktiv img{
+
+.aktiv img {
     width: 90%;
     border-radius: 10px;
 }
-.passiv img{
-        width: 90%;
-        border-radius: 10px;
+
+.passiv img {
+    width: 90%;
+    border-radius: 10px;
 }
-.APoverskrift{
+
+.APoverskrift {
     text-align: center;
     font-size: 1.6rem;
     margin: 5% 0;
 }
-#AP{
+
+#AP {
     font-size: 1.1rem;
 }
-.algoritmer{
+
+.algoritmer {
     grid-column: 3/4;
 }
-.lesVidere{
+
+.lesVidere {
     grid-column: 3/4;
     display: flex;
     flex-direction: row;
@@ -361,10 +403,12 @@ main{
     margin: 10% 0 10% 0;
     gap: 2%;
 }
-.lesVidereTekst{
+
+.lesVidereTekst {
     width: 30%;
 }
-.lesVidereBox{
+
+.lesVidereBox {
     background: linear-gradient(135deg, var(--blue), var(--pink));
     display: flex;
     flex-direction: row;
@@ -373,9 +417,10 @@ main{
     justify-content: space-around;
     border-radius: 40px;
     align-items: center;
-   
+
 }
-.lesVidereLink{
+
+.lesVidereLink {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -389,17 +434,19 @@ main{
     height: 70%;
     border-radius: 30px;
 }
-.lesVidereLink i{
+
+.lesVidereLink i {
     font-size: 2rem;
 }
-.lesVidereLink:hover{
+
+.lesVidereLink:hover {
     opacity: 0.8;
     transition: 0.3s;
 }
 
 /* komersielle formål*/
-.bakgrunn{
-    background: url(/bilder/bakgrunn.jpg);
+.bakgrunn {
+    background: url(/bilder/bakgrunnBR.jpeg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -408,7 +455,8 @@ main{
     flex-direction: column;
     opacity: 0.8;
 }
-.section{
+
+.section {
     height: 100vh;
     width: 60%;
     opacity: 0;
@@ -419,91 +467,139 @@ main{
     transform: translateY(20px);
     transition: opacity 1s ease-out, transform 1s ease-out;
 }
-.BK{
+
+.BK {
     display: flex;
     flex-direction: column;
-    background-color:rgb(246, 241, 236);
+    background-color: rgb(246, 241, 236);
     padding: 6% 8% 3% 8%;
     border-radius: 30px;
-    color: rgb(0,0,0);
+    color: rgb(0, 0, 0);
     font-size: 1.3rem;
 }
-.BKoverskrift{
+
+.BKoverskrift {
     padding: 8%;
     text-align: center;
 }
+
 .section.paa {
     opacity: 1;
     transform: translateY(0);
 }
-.pil{
+
+.pil {
     display: flex;
     justify-content: flex-end;
 }
-.section i{
+
+.section i {
     font-size: 2rem;
     color: var(--pink);
 }
 
-.section i:hover{
+.section i:hover {
     color: var(--dark-pink);
     transition: 0.3s;
 }
-.skrolloppKF{
+
+.skrolloppKF {
     width: 70%;
 }
 
 /*informasjonstillgang og politikk*/
-.mainPI{
+.mainPI {
     padding-top: 8%;
 }
-.PIoverskrift{
+
+.PIoverskrift {
     grid-column: 3/4;
     margin-top: 4%;
 }
-.PIintro{
+
+.PIintro {
     grid-column: 3/4;
     background-color: var(--dark-pink)(77, 143, 201);
     border-radius: 25px;
     margin-top: 4%;
     padding: 1.5% 1%;
 }
-.PI{
+
+.PI {
     padding: 3% 0;
     grid-column: 3/4;
     display: flex;
     justify-content: center;
 
 }
-.PI img{
+.bildeToptekst{
+    padding-bottom: 0;
+}
+.bildePI{
+    padding-top: 0;
+}
+.bildePI p {
+    text-align: left;
+    overflow: hidden; 
+
+}
+.bildePI img {
     width: 80%;
     border-radius: 30px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    float: left;
+    margin: 18px 18px 10px 0; 
+    width: 50%;
 }
+
 /*persjonvern*/
-.PVoverskrift{
+.PVoverskrift {
     grid-column: 3/4;
     margin-top: 15%;
 }
-.PV{
+.PV {
     padding: 3% 0;
-    grid-column: 3/4; 
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    grid-column: 3/4;
 }
-.quiz{
+.bildePV img {
+    float: right;
+    margin: 0 20px 15px 0; 
+    width: 50%;
+    height: auto;
+}
+
+.bildePV p {
+    text-align: left;
+    overflow: hidden; 
+}
+.quizPV{
+    grid-column: 3/4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5% 0;
+}
+.quizPV p{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 2%;
+}
+.quiz {
     background-color: var(--blue);
     width: fit-content;
-    padding: 1%;
+    padding: 1.5%;
     border-radius: 20px;
     margin-top: 1%;
 }
-.quiz a{
+
+.quiz a {
     color: var(--white);
     text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
 }
-.quiz:hover{
+
+.quiz:hover {
     background-color: var(--pink);
     transition: 0.3s;
 }
