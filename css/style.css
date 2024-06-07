@@ -414,6 +414,7 @@ main {
 
 .lesVidereTekst {
     width: 30%;
+    margin-top: 4%;
 }
 .lesVidereTekst p{
  font-size: 1.1rem;
