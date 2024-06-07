@@ -97,7 +97,7 @@ window.addEventListener("load", function () {
 const lukk = document.getElementById("lukkKnapp")
 lukk.addEventListener("click", function () {
   if (popup.classList.contains("aktiv")) {
-    window.location.href = "../html/forside.html";
+    window.location.href = "../html/index.html";
   }
 });
 
@@ -111,7 +111,7 @@ startspill.addEventListener("click", function () {
 
 const exit = document.querySelector(".exit")
 exit.addEventListener("click", function () {
-    window.location.href = "../html/forside.html";
+    window.location.href = "../html/index.html";
   }
 );
 
