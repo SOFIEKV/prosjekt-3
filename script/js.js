@@ -23,18 +23,14 @@ skrollopp.forEach(element => {
     });
 });
 
-
-
-const kildeKnapp = document.getElementById("kildeKnapp")
-const kilder = document.querySelector(".kilder")
-
-kildeKnapp.addEventListener("click", function () {
-    if (kilder.style.display == "none") {
-        kilder.style.display = "block"
+document.getElementById("kildeKnapp").addEventListener('click', function () {
+    const extraInfo = document.querySelector('.kilder');
+    if (extraInfo.style.display === 'none') {
+        extraInfo.style.display = 'block';
+        document.getElementById("kildeKnapp").textContent = 'Skjul';
+    } else {
+        extraInfo.style.display = 'none';
+        document.getElementById("kildeKnapp").textContent = 'Kilder';
     }
-    else {
-        kilder.style.display = "none";
-    }
-})
-
+});
 

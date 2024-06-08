@@ -135,7 +135,7 @@
 
 footer {
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 100px 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
     width: 100vw;
@@ -147,37 +147,17 @@ footer {
     justify-content: center;
 }
 
-.kontaktOss ul {
+footer ul {
     height: fit-content;
     list-style-type: none;
     line-height: 1.8;
 }
-
-.kontaktOss h5 {
+footer h5 {
     font-size: 1.2rem;
     margin-bottom: 2%;
 }
-
-.kontaktOss h6 {
-    padding-top: 4%;
-    font-size: 1.2rem;
-}
-
-.kontaktOss i {
+footer i {
     margin-right: 8px;
-}
-
-.sosialeMedier h5 {
-    font-size: 1.2rem;
-}
-
-.sosialeMedier ul {
-    list-style-type: none;
-    line-height: 2;
-}
-
-.sosialeMedier i {
-    padding-right: 4%;
 }
 .kildeBox {
     grid-column: 1/4;
@@ -186,7 +166,6 @@ footer {
     flex-direction: column;
     width: 100vw;
 }
-
 #kildeKnapp {
     background-color: transparent;
     border-radius: 10px;
@@ -196,125 +175,21 @@ footer {
     cursor: pointer;
     width: 20%;
     text-align: center;
-    border: var(--dark-pink) solid 1.5px;
-   
+    border: var(--dark-pink) solid 1.5px; 
 }
-
 #kildeKnapp:hover {
     background-color: var(--dark-pink);
     transition: background 0.3s;
 }
-
 .kilder {
     color: var(--grey);
     line-height: 1.4;
-}
-
-.kilder a {
-    color: var(--white);
-    text-decoration: none;
-}
-
-
-/*
-
-footer {
-    display: flex;
-    flex-direction: row;
-    width: 100vw;
-    height: fit-content;
-    min-height: 250px;
-    background-color: var(--black);
-    color: var(--white);
-    padding-top: 4%;
-    justify-content: center;
-    gap: 25%;
-
-}
-
-.kontaktOss ul {
-    list-style-type: none;
-    line-height: 1.8;
-}
-
-.kontaktOss h5 {
-    font-size: 1.2rem;
-    margin-bottom: 2%;
-}
-
-.kontaktOss h6 {
-    padding-top: 4%;
-    font-size: 1.2rem;
-}
-
-.kontaktOss i {
-    margin-right: 2%;
-}
-
-.kildeBox {
-    width: 200px;
-}
-
-.sosialeMedier h5 {
-    font-size: 1.2rem;
-}
-
-.sosialeMedier ul {
-    list-style-type: none;
-    line-height: 2;
-}
-
-.sosialeMedier i {
-    padding-right: 4%;
-}
-
-
-.kildeBox{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 6fr;
-    width: fit-content;
-}
-
-#kildeKnapp {
-    grid-row: 1/2;
-    grid-column: 1/3;
-    background-color: transparent;
-    border-radius: 10px;
-    padding: 3px 5px;
-    color: var(--white);
-    border: none;
-    cursor: pointer;
-    width: 35%;
-    text-align: center;
-    border: var(--dark-pink) solid 1.5px;
-}
-
-#kildeKnapp:hover {
-    background-color: var(--dark-pink);
-    transition: background 0.3s;
-}
-
-.kilder {
-    color: var(--grey);
-    line-height: 1.4;
-    margin-top: 8px;
-}
-.kilderDel1{
-    grid-row: 2/3;
-    grid-column: 1/2;
-}
-
-.kilderDel2{
-    grid-row: 2/3;
-    grid-column: 2/3;
 }
 .kilder a {
     color: var(--white);
     text-decoration: none;
 }
 
-*/
 
 /* generelt*/
 main {
