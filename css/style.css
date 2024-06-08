@@ -148,7 +148,7 @@ footer {
 }
 
 .kontaktOss ul {
-
+    height: fit-content;
     list-style-type: none;
     line-height: 1.8;
 }
@@ -164,7 +164,7 @@ footer {
 }
 
 .kontaktOss i {
-    margin-right: 2%;
+    margin-right: 8px;
 }
 
 .sosialeMedier h5 {
