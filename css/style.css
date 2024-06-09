@@ -164,16 +164,16 @@ footer i {
     display: flex; 
     align-items: flex-start; 
     flex-direction: column;
-    width: 100vw;
+    width: 80vw; 
 }
 #kildeKnapp {
     background-color: transparent;
     border-radius: 10px;
-    padding: 3px 5px;
+    padding: 3px 7px;
     color: var(--white);
     border: none;
     cursor: pointer;
-    width: 20%;
+    width: fit-content;
     text-align: center;
     border: var(--dark-pink) solid 1.5px; 
 }
@@ -184,10 +184,11 @@ footer i {
 .kilder {
     color: var(--grey);
     line-height: 1.4;
+   
 }
 .kilder a {
-    color: var(--white);
-    text-decoration: none;
+    color: var(--dark-pink);
+    
 }
 
 
@@ -212,8 +213,8 @@ main {
 .tekst {
     text-align: justify;
     font-size: 1.3rem;
-    line-height: 1.5;
-    letter-spacing: 0.5px;
+    line-height: 1.6;
+  
 }
 
 .skrollopp {
@@ -401,15 +402,19 @@ main {
     justify-content: space-around;
     border-radius: 40px;
     align-items: center;
-
 }
-
+.lesVidereBox a{
+    text-decoration: none;
+    display: flex;
+    flex-wrap: wrap;
+    color: var(--black);
+    font-size: 1rem;
+}
 .lesVidereLink {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
     width: 35%;
     min-width: fit-content;
     background-color: var(--white);
@@ -418,6 +423,7 @@ main {
     height: 70%;
     border-radius: 30px;
 }
+
 
 .lesVidereLink i {
     font-size: 2rem;
@@ -466,6 +472,11 @@ main {
     padding: 8%;
     text-align: center;
 }
+.BKavsluttning{
+    padding: 8%;
+    text-align: center;
+    font-size: 1.1rem;
+}
 
 .section.paa {
     opacity: 1;
@@ -508,7 +519,11 @@ main {
     margin-top: 4%;
     padding: 1.5% 1%;
 }
-
+.PIintro a{
+   text-decoration: none;
+   font-weight: 600;
+   color: var(--black);
+}
 .PI {
     padding: 3% 0;
     grid-column: 3/4;
