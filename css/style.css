@@ -184,6 +184,7 @@ footer i {
 .kilder {
     color: var(--grey);
     line-height: 1.4;
+    padding-bottom: 20px;
    
 }
 .kilder a {
@@ -603,6 +604,27 @@ main {
 }
 
 
+@media (max-width: 500px) {
+    footer{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    }
+    .adresse{
+        grid-column: 1/3;
+        padding-left: 20px;
+    }
+    .kontaktOss{
+        grid-column: 1/3;
+
+    }
+    .sosialeMedier{
+        grid-column: 3/5;
+    }
+    .kildeBox{
+        grid-column: 1/5;
+    }
+}
+
 @media (max-width: 768px) {
     .data{
         grid-column: 2/5;
@@ -612,9 +634,54 @@ main {
     }
     .lesVidere{
         grid-column: 2/5;
-        gap: 20%;
     }
    .tekst{
     text-align: center;
    }
+   .mainPI{
+    padding-top: 20%;
+   }
+
+   .PI{
+    grid-column: 2/5;
+   }
+   .bildeToptekst p{
+    text-align: left;
+   }
+   .PIintro{
+    grid-column: 2/5;
+   }
+   .mainPV{
+    padding-top: 20%;
+   }
+   .PV{
+    grid-column: 2/5;
+   }
+}
+@media (max-width: 768px){
+    .PassivAktiv{
+        flex-direction: column;
+    }
+    .typeSpor{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+  
+    .lesVidere{
+        flex-direction: column;
+       }
+       .lesVidereTekst{
+        width: 100%;
+        margin-bottom: 20px;
+       }
+   .lesVidereBox{
+        width: 100%;
+        height: 200px;
+        justify-content: space-evenly;
+    }
+   .lesVidereLink{
+        width: 30%;
+        height: 60%;
+    }
+
 }
