@@ -56,10 +56,10 @@
   .start{
     background-color: var(--dark-pink);
     border-radius: 20px;
-    padding: 7px 12px ;
+    padding: 10px 20px ;
     color: whitesmoke;
     position: absolute;
-    font-size: 5vmin;
+    font-size: 2.2rem;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -147,17 +147,17 @@
   cursor: pointer;
   border: none;
   outline: none;
-  background-color: var(--dark-pink);
-  color: var(--white);
+  border: solid 3px var(--dark-pink);
+  background-color: transparent;
+  color: var(--dark-pink);
   font-size: 25px;
   padding: 8px 18px 8px;
   border-radius: 15px;
 }
 #startSpill:hover{
-  border: solid 3px var(--dark-pink);
+  background-color: var(--dark-pink);
   transition: 0.3s;
-  color: var(--dark-pink);
-  background-color: transparent;
+  color: var(--white);
 }
 .intro .dusBakgrunn {
   position: fixed;
