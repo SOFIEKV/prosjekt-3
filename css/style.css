@@ -607,7 +607,6 @@ main {
 @media (max-width: 500px) {
     footer{
         grid-template-columns: 1fr 1fr 1fr 1fr;
-
     }
     .adresse{
         grid-column: 1/3;
