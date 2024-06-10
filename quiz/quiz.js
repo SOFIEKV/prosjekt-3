@@ -12,11 +12,11 @@
         {
             question: "Hvilken rettighet gir GDPR til individer?",
             answers: {
-                a: "Retten til å bli glemt",
+                a: "Retten til å dele andres data ",
                 b: "Retten til å ignorere reklame",
-                c: "Retten til å dele andres data"
+                c: "Retten til å bli glemt"
             },
-            correctAnswer: "a"
+            correctAnswer: "c"
         },
         {
             question: "Hva må bedrifter gjøre før de kan behandle personopplysninger?",
@@ -28,11 +28,11 @@
             correctAnswer: "a"
         },
         {
-            question: "Hva er en viktig del av GDPRs prinsipper?",
+            question: "Hva er formålet med GDPR?",
             answers: {
-                a: "Data kan deles fritt uten restriksjoner",
-                b: "Personvern skal være innebygd i systemer fra starten",
-                c: "Bedrifter kan beholde data så lenge de ønsker"
+                a: "Å øke markedsføringsmulighetene for bedrifter i EU.",
+                b: " Å beskytte personopplysninger og styrke personvernet til individer innen EU.",
+                c: "Å redusere antall internettilkoblinger i EU."
             },
             correctAnswer: "b"
         }

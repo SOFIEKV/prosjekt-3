@@ -380,11 +380,10 @@ main {
     flex-direction: row;
     justify-content: space-between;
     margin: 10% 0 10% 0;
-    gap: 5%;
 }
 
 .lesVidereTekst {
-    width: 30%;
+    width: 35%;
     margin-top: 4%;
 }
 .lesVidereTekst p{
@@ -499,7 +498,7 @@ main {
 }
 
 .skrolloppKF {
-    width: 70%;
+    width: 65%;
 }
 
 /*informasjonstillgang og politikk*/
@@ -601,4 +600,21 @@ main {
 .quiz:hover {
     background-color: var(--pink);
     transition: 0.3s;
+}
+
+
+@media (max-width: 768px) {
+    .data{
+        grid-column: 2/5;
+    }
+    .algoritmer{
+        grid-column: 2/5;
+    }
+    .lesVidere{
+        grid-column: 2/5;
+        gap: 20%;
+    }
+   .tekst{
+    text-align: center;
+   }
 }

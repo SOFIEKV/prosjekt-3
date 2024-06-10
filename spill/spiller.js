@@ -7,14 +7,14 @@ const DINO_FRAME_COUNT = 2
 const FRAME_TIME = 100
 
 let hopper
-let dinoFrame
+let spillerFrame
 let currentFrameTime
 let yVelocity
 
  
 export function setupSpiller() {
     hopper = false
-    dinoFrame = 0
+    spillerFrame = 0
     currentFrameTime = 0
     yVelocity = 0
     settVerdi(spillerElem, "--bottom", 0)
@@ -36,7 +36,7 @@ export function setupSpiller() {
     }
 
 export function startSpiller() {
-    spillerElem.src = "../bilder/spillerHopp.png"
+    spillerElem.src = "../bilder/spiller.png"
   }
 
   
@@ -47,8 +47,8 @@ function lop(delta, speedScale) {
     }
   
     if (currentFrameTime >= FRAME_TIME) {
-      dinoFrame = (dinoFrame + 1) % DINO_FRAME_COUNT
-      spillerElem.src = `../bilder/spiller${dinoFrame}.png`
+      spillerFrame = (spillerFrame + 1) % DINO_FRAME_COUNT
+      spillerElem.src = `../bilder/spiller${spillerFrame}.png`
       currentFrameTime -= FRAME_TIME
     }
     currentFrameTime += delta * speedScale
